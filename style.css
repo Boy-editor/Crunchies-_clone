@@ -1,0 +1,629 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+header {
+    background-color: rgb(249, 252, 255);
+    padding: 40px 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100vw;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+}
+
+.menu li a:hover {
+    color: red;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.location i {
+    margin-right: 5px;
+    color: red;
+}
+
+.now {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.order {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.order:hover {
+    background: darkred;
+}
+
+.now i {
+    font-size: 22px;
+    cursor: pointer;
+    color: red; 
+    display: inline-block;
+}
+
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    gap: -400px;
+    overflow: hidden; /* Prevents horizontal scrolling */
+    color: red;
+    margin-left: 20px; 
+    padding-top: 150px;
+    align-items: center;
+    justify-items: center;
+}
+
+.welcome img {
+   width: 55rem;
+}
+
+.para {
+    font-size: 22px;
+    color: red;
+    margin-top: 100px;
+    margin-bottom: -60px;
+}
+
+.well h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.delivery {
+   display: flex;
+   gap: 40px;
+}
+
+.delivery1 {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pickup1 {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delivery1:hover {
+    background-color: darkred;
+}
+.pickup1:hover {
+    background-color: darkred;
+}
+
+.delivery button i {
+    font-size: 40px;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.menu-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Responsive grid */
+    gap: 40px; /* Space between items */
+    max-width: 1200px;
+    margin: 80px;
+    margin-top: -20px;
+    padding: 30px;
+}
+
+.menu-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.05);
+}
+
+.menu-title {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+}
+
+.menu-header {
+    position: relative;
+    text-align: center;
+}
+
+.underline {
+    width: 80px;
+    height: 7px;
+    background-color: red;
+    margin: 0 auto;
+    border-radius: 2px;
+    bottom: 0;
+    transform: translateY(-40px);
+    transition: transform 0.5s ease-in-out;
+    animation: slideUp 0.9s ease-in-out;
+}
+
+.see_more {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s;
+    transform: translateY(-80px);
+}
+
+.see_more:hover{
+    background-color: darkred;
+}
+
+.store {
+    background-color: red;
+    padding-right: 40px;
+}
+
+.more {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    justify-items: left;
+    color: white;
+}
+
+.more h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.more p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/*.more button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}*/
+
+.download1 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.download2 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.mobile {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+}
+
+
+.download {
+    align-items: center;
+}
+
+.about_us h2 {
+    margin-top: 150px;
+}
+
+.us {
+    display: flex;
+    margin: 120px;
+    gap: 100px;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.us img {
+    width: 500px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.about_us .underline {
+    width: 40px;
+    height: 7px;
+    background-color: red;
+    margin: 0 auto;
+    border-radius: 2px;
+    bottom: 0;
+    transform: translateY(-40px);
+    transition: transform 0.5s ease-in-out;
+    animation: slideUp 0.9s ease-in-out;
+}
+
+.about button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.about button:hover{
+    background: darkred;
+}
+
+.about button i {
+    font-size: 30px;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    color: white; 
+}
+
+.adverts {
+    background-color: pink;
+}
+
+.club {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 100px;
+    padding-bottom: 40px;
+}
+
+.offers {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.offers img {
+    width: 450px;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+    padding: 20px;
+}
+
+.newsletter {
+    background-color: rgb(255, 216, 216);
+    margin-top: -100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.subscribe img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 500px;
+    transition: transform 0.5s ease;
+    padding: 20px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.subscribe h3 {
+    font-size: 1.8rem;
+    margin-top: -20px;
+}
+
+.subscribe p {
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+.form button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+    padding: 10px;
+    width: 150px;
+    height: 55px;
+    margin-top: 7px;
+}
+
+.input {
+    width: 500px;
+    height: 35px;
+    margin-top: 2px;
+    padding: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: auto;
+}
+
+.form {
+    display: flex;
+    background-color: white;
+    height: 70px;
+    padding-left: 5px;
+    padding-right: 7px;
+    border-radius: 50px;
+}
+
+footer {
+    background-color: red;
+    color: white;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-bottom: 80px;
+}
+
+.foot img {
+    width: 200px;
+}
+
+.foot h3 {
+    font-size: 2rem;
+}
+
+.tail h3 {
+    margin-bottom: -10px;
+}
+
+.feedback button {
+    background: rgb(255, 255, 255);
+    color: red;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.feedback button:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.contacts {
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.tails {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Responsive */
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(0100);
+    }
+}
+
+
+
+
+@media (max-width:900px) {
+    .welcome {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .well h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+        font-weight: bold;
+        margin-bottom: 45px;
+    }
+
+    .para {
+        font-size: 20px;
+        margin-bottom: -30px;
+    }
+
+    .welcome img {
+        width: 35rem;
+        margin-top: 30px;
+     }
+
+     .delivery {
+        justify-content: center;
+     }
+
+     h2 {
+        color: red;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .underline {
+        width: 80px;
+        height: 7px;
+        background-color: red;
+        margin: 0 auto;
+        border-radius: 2px;
+        bottom: 0;
+        transform: translateY(-30px);
+        transition: transform 0.5s ease-in-out;
+        animation: slideUp 0.9s ease-in-out;
+    }
+    
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Responsive grid */
+        width: 400px;
+        gap: 40px; /* Space between items */
+        max-width: 1200px;
+        margin: 80px;
+        margin-top: -20px;
+        padding: 30px;
+    }
+    
+    .menu-item img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.5s ease;
+    }
+    
+    .menu-title {
+        font-size: 28px; 
+    }
+
+    .store {
+        padding-bottom: 30px;
+    }
+
+    .more {
+        display: block;
+        justify-items: center;
+    }
+
+    .more h3 {
+        font-size: 2rem;
+    }
+
+    .more p {
+        font-size: 12px;
+    }
+
+    .us {
+        display: block;
+    }
+    
+}
