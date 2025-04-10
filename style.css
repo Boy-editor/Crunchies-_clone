@@ -70,7 +70,7 @@ nav {
     color: red;
     position: absolute;
     top: 100px;
-    right: 80px;
+    right: 140px;
     z-index: 1000; /* Ensures the button stays above other elements */
     padding: 5px;
     border-radius: 5px;
@@ -566,14 +566,21 @@ footer {
 
 
     header {
-        display: block;
+        display: flex;
+        justify-content: flex-end; /* Pushes header content to the right */
+        padding: 40px 50px;
         flex-direction: column;
         align-items: center;
         position: fixed;
         top: 0;
-        width: 90%;
+        width: 100%;
         z-index: 1000;
-        padding-bottom: 35px;
+        padding-bottom: 45px;
+    }
+
+    .logo {
+        margin-left: -100px;
+        margin-top: -30px;
     }
 
     nav {
@@ -614,7 +621,7 @@ footer {
         display: none;
         background: rgb(255, 255, 255);
         position: fixed;
-        top: 140px;
+        top: 160px;
         right: 0;
         width: 100%;
         padding: 10px;
