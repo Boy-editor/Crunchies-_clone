@@ -70,7 +70,7 @@ nav {
     color: red;
     position: absolute;
     top: 100px;
-    right: 130px;
+    right: 80px;
     z-index: 1000; /* Ensures the button stays above other elements */
     padding: 5px;
     border-radius: 5px;
@@ -109,7 +109,6 @@ nav {
     font-size: 22px;
     cursor: pointer;
     color: red; 
-    display: inline-block;
 }
 
 
@@ -567,16 +566,18 @@ footer {
 
 
     header {
-        display: flex;
+        display: block;
+        flex-direction: column;
         align-items: center;
         position: fixed;
         top: 0;
-        width: 400px;
+        width: 100%;
         z-index: 1000;
         padding-bottom: 35px;
     }
 
     nav {
+        display: none;
         margin-top: -70px;
         display: flex;
         justify-content: space-between;
@@ -597,8 +598,8 @@ footer {
         font-size: 12px;
         letter-spacing: 1px;
         position: absolute;
-        top: 90px;
-        right: 450px;
+        top: 100px;
+        right: 360px;
         z-index: 1000; /* Ensures the button stays above other elements */
         padding: 5px;
         border-radius: 5px;
@@ -610,7 +611,7 @@ footer {
     }
     
       .menu {
-        display: hidden;
+        display: none;
         background: rgb(255, 255, 255);
         position: fixed;
         top: 140px;
@@ -647,9 +648,31 @@ footer {
         display: none;
       }
 
+      .now {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-top: 25px;
+      }
+
+      .now i {
+        margin-top: 20px;   
+        margin-right: 70px;
+      }
+
     .contain {
         display: flex;
         flex-direction: column;
+    }
+
+    .order {
+        background: red;
+        color: white;
+        padding: 15px 40px;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
     }
 
     .welcome {
@@ -840,10 +863,6 @@ footer {
 
     .contacts {
         display: block;
-    }
-
-    .now i {
-        margin-top: 100px;
     }
 
     footer {
